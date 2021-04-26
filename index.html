@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./index.css" />
+
+		<script defer src="./index.js"></script>
+	</head>
+
+	<body>
+		<header class="header" id="home">
+			<nav class="nav">
+				<a class="nav__logo" href="#home">Nodar Mosia</a>
+
+				<ul class="nav__links no-select">
+					<li class="nav__item">
+						<a class="nav__link" href="#section--1">Projects</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#section--2">About</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Resume</a>
+					</li>
+				</ul>
+
+				<a class="nav__link--btn btn--show-modal no-select" href="#">Contact</a>
+				<img
+					class="nav__switch-theme"
+					src="./images/theme-icon-light.png"
+					alt="toggle-theme-icon"
+				/>
+			</nav>
+
+			<div class="header__content">
+				<div class="header__content--titles">
+					<h5 class="header__title--small">modern web design</h5>
+					<h1 class="header__title no-select">
+						Full-stack <br />
+						done <span class="highlight"></span>
+					</h1>
+				</div>
+				<img
+					class="header__img"
+					src="./images/mobile-guy.svg"
+					alt="Javascript Ilustration"
+				/>
+			</div>
+
+			<div class="header__call-to-action">
+				<a href="#section--1" class="header__scroll">Scroll Down</a>
+				<a href="#section--1" class="header__down-arrow-link"
+					><img
+						class="header__down-arrow"
+						src="./images/down-arrow-light.png"
+						alt="scroll down arrow"
+				/></a>
+			</div>
+		</header>
+
+		<div class="section__container">
+			<section class="section" id="section--1">
+				<h1 class="section__title">projects</h1>
+
+				<div class="projects">
+					<div class="projects__project">
+						<div class="project__logo--container">
+							<img
+								class="project__logo"
+								src="./images/retroverse-games-logo.png"
+								alt="project logo - Retroverse Games"
+							/>
+						</div>
+						<h3 class="project__title">Retroverse Games</h3>
+						<p class="project__description">
+							Popular arcade games from 20th century
+						</p>
+						<h5 class="project__description--small">Javascript</h5>
+					</div>
+
+					<div class="projects__project">
+						<div class="project__logo--container">
+							<img
+								class="project__logo"
+								src="./images/crwn-clothing-logo.svg"
+								alt="project logo - crwn-clothing"
+							/>
+						</div>
+						<h3 class="project__title">crwn clothing</h3>
+						<p class="project__description">
+							E-commerce website demo with online payments
+						</p>
+						<h5 class="project__description--small">
+							Javascript / ReactJS / Firebase
+						</h5>
+					</div>
+
+					<div class="projects__project">
+						<div class="project__logo--container">
+							<img
+								class="project__logo"
+								src="./images/forkify-logo.png"
+								alt="project logo - forkify"
+							/>
+						</div>
+						<h3 class="project__title">forkify</h3>
+						<p class="project__description">
+							Cooking recipe website demo with bookmarking feature
+						</p>
+						<h5 class="project__description--small">
+							Javascript / forkify API
+						</h5>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="section__container">
+			<section class="section" id="section--2">
+				<h1 class="section__title">about</h1>
+
+				<div class="about">
+					<div class="profile-picture"></div>
+					<div class="biography--container">
+						<h3 class="biography--title">Biography</h3>
+						<p class="biography--text">
+							I am a Bachelor's student in the Department of Computer Science at
+							Tbilisi State University from Tbilisi, Georgia, graduating in May
+							2023. My interests lie in solving problems and making minimalist
+							and pleasing UIs.
+						</p>
+					</div>
+				</div>
+
+				<h2 class="skills--title">Skills</h2>
+				<div class="skills">
+					<div class="skill">
+						<img
+							class="skill--icon"
+							src="./images/icon-java.png"
+							alt="java icon"
+						/>
+						<h4 class="skill--name">Java</h4>
+						<p class="skill--description">
+							Spring (Boot, MVC & Hibernate), Maven, Java8+
+						</p>
+					</div>
+					<div class="skill">
+						<img
+							class="skill--icon"
+							src="./images/icon-javascript.png"
+							alt=""
+						/>
+						<h4 class="skill--name">JavaScript</h4>
+						<p class="skill--description">React.js, Node.js</p>
+					</div>
+					<div class="skill">
+						<img class="skill--icon" src="./images/icon-html.png" alt="" />
+						<h4 class="skill--name">Front-end</h4>
+						<p class="skill--description">HTML5, CSS3, Sass</p>
+					</div>
+					<div class="skill">
+						<img class="skill--icon" src="./images/icon-database.png" alt="" />
+						<h4 class="skill--name">Database</h4>
+						<p class="skill--description">MySQL, MSSQL, Firebase</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer></footer>
+	</body>
+</html>
