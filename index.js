@@ -8,10 +8,16 @@ const header = document.querySelector(".header");
 const highlight = document.querySelector(".highlight");
 const btnToggleTheme = document.querySelector(".nav__switch-theme");
 const scrollElements = document.querySelectorAll(
-	".nav__logo, .nav__link, .header__scroll, .header__down-arrow-link"
+	".nav__logo, .nav__link--scroll, .header__scroll, .header__down-arrow-link"
 );
+const darkableElements = document.querySelectorAll(
+	"body, .nav__logo, .nav__link, .projects__project, .skill, .footer"
+);
+const headerDownArrow = document.querySelector(".header__down-arrow");
 
-/* Other Variables */
+/*******************
+ * Other Variables *
+ ******************/
 const HIGHLIGHT_WORDS = ["right", "simple"];
 const HIGHLIGHT_TIMER_TIME = 7000;
 const navHeight = nav.getBoundingClientRect().height;
@@ -42,6 +48,8 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 headerObserver.observe(header);
 
+window.addEventListener("load", handleLoad);
+
 /*************
  * Functions *
  ************/
@@ -62,20 +70,27 @@ function highlightTimerFunction() {
 	if (wordIndex >= HIGHLIGHT_WORDS.length) wordIndex = 0;
 }
 
+function handleLoad() {
+	themeIsDark = JSON.parse(window.localStorage.getItem("themeIsDark"));
+	themeIsDark = !themeIsDark ? false : true;
+
+	applyTheme(themeIsDark ? "dark" : "light");
+}
+
 function toggleTheme() {
 	themeIsDark = !themeIsDark;
-	const theme = themeIsDark ? "dark" : "light";
+	window.localStorage.setItem("themeIsDark", themeIsDark);
 
+	applyTheme(themeIsDark ? "dark" : "light");
+}
+
+function applyTheme(theme) {
 	btnToggleTheme.src = `./images/theme-icon-${theme}.png`;
-	document.querySelector(
-		".header__down-arrow"
-	).src = `./images/down-arrow-${theme}.png`;
+	headerDownArrow.src = `./images/down-arrow-${theme}.png`;
 
-	document
-		.querySelectorAll(
-			"body, .nav__logo, .nav__link, .projects__project, .skill, .footer"
-		)
-		.forEach((el) => el.classList.toggle("dark"));
+	theme === "dark"
+		? darkableElements.forEach((el) => el.classList.add("dark"))
+		: darkableElements.forEach((el) => el.classList.remove("dark"));
 }
 
 function btnScrollHandler(e) {
