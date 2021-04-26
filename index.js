@@ -14,9 +14,10 @@ const scrollElements = document.querySelectorAll(
 /* Other Variables */
 const HIGHLIGHT_WORDS = ["right", "simple"];
 const HIGHLIGHT_TIMER_TIME = 7000;
+const navHeight = nav.getBoundingClientRect().height;
+
 let wordIndex = 0;
 let currentWord = "";
-
 let themeIsDark = false;
 
 /******************
@@ -34,14 +35,11 @@ scrollElements.forEach((el) => {
 	el.addEventListener("click", btnScrollHandler);
 });
 
-const navHeight = nav.getBoundingClientRect().height;
-
 const headerObserver = new IntersectionObserver(stickyNav, {
 	root: null,
 	rootMargin: `-${navHeight}px`,
 	threshold: [],
 });
-
 headerObserver.observe(header);
 
 /*************
@@ -75,7 +73,7 @@ function toggleTheme() {
 
 	document
 		.querySelectorAll(
-			"body, .nav__link--btn, .nav__logo, .nav__link, .projects__project, .skill"
+			"body, .nav__logo, .nav__link, .projects__project, .skill, .footer"
 		)
 		.forEach((el) => el.classList.toggle("dark"));
 }

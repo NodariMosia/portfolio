@@ -51,11 +51,14 @@ img {
 	user-select: none;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 /****************************
  ****************************
- ****************************
  **       Navigation       **
- ****************************
  ****************************
  ***************************/
 .nav {
@@ -74,10 +77,10 @@ img {
 }
 
 .nav__logo {
+	margin-right: auto;
 	font-weight: 600;
 	font-size: 1.1rem;
 	color: var(--color-secondary-darker);
-	text-decoration: none;
 	letter-spacing: 0.1rem;
 	display: block;
 	transition: transform 0.3s;
@@ -90,7 +93,6 @@ img {
 }
 
 .nav__links {
-	margin-left: 3rem;
 	display: flex;
 	align-items: center;
 	list-style: none;
@@ -104,9 +106,7 @@ img {
 .nav__link:visited {
 	font-weight: 600;
 	font-size: 0.9rem;
-	text-decoration: none;
 	letter-spacing: 0.05rem;
-	color: inherit;
 	display: block;
 	border-bottom: 3px solid transparent;
 	transition: all 0.3s;
@@ -123,37 +123,6 @@ img {
 	border-bottom: 3px solid var(--color-secondary);
 }
 
-.nav__link--btn:link,
-.nav__link--btn:visited {
-	font-weight: 600;
-	font-size: 0.9rem;
-	text-decoration: none;
-	letter-spacing: 0.05rem;
-	margin-left: auto;
-	padding: 0.3rem 1.2rem;
-	border-radius: 3rem;
-	box-shadow: 1px 1px 2px var(--color-gray-4);
-	color: var(--color-secondary-darker);
-	background-color: #fff;
-	transition: all 0.3s;
-}
-.nav__link--btn:hover,
-.nav__link--btn:active {
-	color: #fff;
-	background: var(--color-secondary-darker);
-	transform: translateY(-1px);
-}
-.nav__link--btn.dark {
-	color: #fff;
-	background: var(--color-secondary);
-	box-shadow: 1px 1px 2px var(--color-gray-1);
-}
-.nav__link--btn.dark:hover,
-.nav__link--btn.dark:active {
-	color: var(--color-secondary);
-	background-color: #fff;
-}
-
 .nav__switch-theme {
 	width: 1.6rem;
 	height: 1.6rem;
@@ -168,14 +137,11 @@ img {
 
 /****************************
  ****************************
- ****************************
- **         HEADER         **
- ****************************
+ **         Header         **
  ****************************
  ***************************/
 .header {
 	background-color: inherit;
-	/* width: 70%; */
 	width: 100%;
 	margin: 0 auto;
 	height: 100vh;
@@ -186,7 +152,6 @@ img {
 }
 
 .header__content {
-	/* width: 100%; */
 	width: 70%;
 	display: flex;
 	flex-direction: row;
@@ -246,7 +211,6 @@ img {
 	font-weight: 800;
 	font-size: 1.3rem;
 	letter-spacing: 0.05rem;
-	text-decoration: none;
 	color: var(--color-primary);
 	transition: all 0.3s;
 }
@@ -262,9 +226,7 @@ img {
 
 /****************************
  ****************************
- ****************************
  **        Sections        **
- ****************************
  ****************************
  ***************************/
 .section__container {
@@ -311,11 +273,12 @@ img {
 	justify-content: space-between;
 	position: relative;
 	cursor: pointer;
-	transition: transform 0.3s;
+	transition: transform 0.3s, box-shadow 0.3s;
 }
 .projects__project:hover,
 .projects__project:active {
 	transform: translateY(-2px) scale(1.05);
+	box-shadow: 3px 3px 3px var(--color-gray-3);
 	opacity: 0.9;
 }
 .projects__project.dark {
@@ -353,9 +316,14 @@ img {
 	margin-top: 3rem;
 }
 
+.project__description {
+	line-height: 1.3rem;
+}
+
 .project__description--small {
 	opacity: 0.7;
 	font-weight: 400;
+	line-height: 1rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -417,15 +385,56 @@ img {
 	font-size: 0.75rem;
 }
 
+/*********************
+ *      Contact      *
+ ********************/
+.contacts {
+	margin-bottom: 1rem;
+}
+.contacts__contact {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1rem;
+}
+
+.contact__icon {
+	width: 2rem;
+	margin-right: 1rem;
+}
+
 /********************
  *      Footer      *
  *******************/
+.footer {
+	padding: 1rem 1.5rem;
+	background: var(--color-gray-5);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+.footer.dark {
+	background: var(--color-gray-2);
+}
+
+.footer__group {
+	display: flex;
+}
+
+.footer__icon {
+	height: 1.5rem;
+	margin-right: 0.7rem;
+}
+
+.footer__info {
+	color: inherit;
+	font-size: 0.9rem;
+}
 
 /***************************
  ***************************
- ***************************
  **     Media Queries     **
- ***************************
  ***************************
  **************************/
 
@@ -522,9 +531,7 @@ img {
 
 /****************************
  ****************************
- ****************************
  **       Key Frames       **
- ****************************
  ****************************
  ***************************/
 @keyframes bounce {
