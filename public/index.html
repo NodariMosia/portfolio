@@ -24,36 +24,40 @@
 	<body>
 		<header class="header" id="home">
 			<nav class="nav">
-				<a class="nav__logo" href="#home">Nodar Mosia</a>
+				<div class="nav__content">
+					<a class="nav__logo" href="#home">Nodar Mosia</a>
 
-				<ul class="nav__links no-select">
-					<li class="nav__item">
-						<a class="nav__link nav__link--scroll" href="#section--1"
-							>Projects</a
-						>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link nav__link--scroll" href="#section--2">About</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link nav__link--scroll" href="#section--3"
-							>Contact</a
-						>
-					</li>
-					<li class="nav__item">
-						<a
-							class="nav__link"
-							href="https://drive.google.com/drive/folders/1oIY6dv1CsX-H0uvSQwAwPBgSoL8lxC7u?usp=sharing"
-							>Resume</a
-						>
-					</li>
-				</ul>
+					<ul class="nav__links no-select">
+						<li class="nav__item">
+							<a class="nav__link nav__link--scroll" href="#section--1"
+								>Projects</a
+							>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav__link--scroll" href="#section--2"
+								>About</a
+							>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav__link--scroll" href="#section--3"
+								>Contact</a
+							>
+						</li>
+						<li class="nav__item">
+							<a
+								class="nav__link"
+								href="https://drive.google.com/drive/folders/1oIY6dv1CsX-H0uvSQwAwPBgSoL8lxC7u?usp=sharing"
+								>Resume</a
+							>
+						</li>
+					</ul>
 
-				<img
-					class="nav__switch-theme"
-					src="./images/theme-icon-light.png"
-					alt="toggle-theme-icon"
-				/>
+					<img
+						class="nav__switch-theme"
+						src="./images/theme-icon-light.png"
+						alt="toggle-theme-icon"
+					/>
+				</div>
 			</nav>
 
 			<div class="header__content">
@@ -87,26 +91,31 @@
 				<h1 class="section__title">projects</h1>
 
 				<div class="projects">
-					<a class="projects__project" href="#">
+					<a
+						class="projects__project"
+						href="https://nodarmosia-mydesign.herokuapp.com/"
+					>
 						<div class="project__logo--container">
 							<img
 								class="project__logo"
-								src="./images/retroverse-games-logo.png"
-								alt="project logo - Retroverse Games"
+								src="./images/mydesign-logo.png"
+								alt="project logo - MyDesign"
 							/>
 						</div>
-						<h3 class="project__title">Retroverse Games</h3>
+						<h3 class="project__title">MyDesign</h3>
 						<p class="project__description">
-							Popular arcade games from 20th century
+							Photo gallery website demo for furniture company
 						</p>
-						<h5 class="project__description--small">Javascript</h5>
+						<h5 class="project__description--small">
+							Javascript / ReactJS / Firebase
+						</h5>
 					</a>
 
 					<a
 						class="projects__project"
 						href="https://nodarmosia-crwn-clothing.herokuapp.com"
 					>
-						<div class="project__logo--container">
+						<div class="project__logo--container overflow">
 							<img
 								class="project__logo"
 								src="./images/crwn-clothing-logo.svg"
@@ -244,38 +253,40 @@
 		</div>
 
 		<footer class="footer">
-			<div class="footer__group">
-				<img
-					class="footer__icon"
-					src="./images/icon-phone.png"
-					alt="phone icon"
-				/>
-				<p class="footer__info">+995 599-94-56-69</p>
-			</div>
+			<div class="footer__content">
+				<div class="footer__group">
+					<img
+						class="footer__icon"
+						src="./images/icon-phone.png"
+						alt="phone icon"
+					/>
+					<p class="footer__info">+995 599-94-56-69</p>
+				</div>
 
-			<div class="footer__group">
-				<img
-					class="footer__icon"
-					src="./images/icon-email.png"
-					alt="email icon"
-				/>
-				<a
-					class="footer__info"
-					href="mailto:nodarmosia@gmail.com?subject=Contacting from portfolio"
-				>
-					nodarmosia@gmail.com</a
-				>
-			</div>
+				<div class="footer__group">
+					<img
+						class="footer__icon"
+						src="./images/icon-email.png"
+						alt="email icon"
+					/>
+					<a
+						class="footer__info"
+						href="mailto:nodarmosia@gmail.com?subject=Contacting from portfolio"
+					>
+						nodarmosia@gmail.com</a
+					>
+				</div>
 
-			<div class="footer__group">
-				<img
-					class="footer__icon"
-					src="./images/icon-github.png"
-					alt="github icon"
-				/>
-				<a class="footer__info" href="https://github.com/NodariMosia"
-					>github.com/NodariMosia</a
-				>
+				<div class="footer__group">
+					<img
+						class="footer__icon"
+						src="./images/icon-github.png"
+						alt="github icon"
+					/>
+					<a class="footer__info" href="https://github.com/NodariMosia"
+						>github.com/NodariMosia</a
+					>
+				</div>
 			</div>
 		</footer>
 	</body>
