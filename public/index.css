@@ -387,6 +387,7 @@ a {
 
 .skill--icon {
 	height: 3rem;
+	width: 3rem;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -463,9 +464,15 @@ a {
  **************************/
 
 /* change font size */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1001px) {
 	:root {
 		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.skills {
+		gap: 1rem;
 	}
 }
 
@@ -530,12 +537,14 @@ a {
 		width: 100px;
 		height: 100px;
 	}
+
 	.skills {
 		grid-template-columns: 1fr;
 		gap: 3rem;
 		width: 100%;
 	}
 	.skill {
+		padding-left: 5rem;
 		height: 5rem;
 		width: 100%;
 		position: relative;
@@ -548,6 +557,10 @@ a {
 	}
 	.skill--name {
 		margin-top: 0.7rem;
+		text-align: left;
+	}
+	.skill--description {
+		text-align: left;
 	}
 }
 
