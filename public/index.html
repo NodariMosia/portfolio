@@ -29,24 +29,23 @@
 
 					<ul class="nav__links no-select">
 						<li class="nav__item">
-							<a class="nav__link nav__link--scroll" href="#section--1"
+							<a class="nav__link nav__link--scroll" href="#about">About</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav__link--scroll" href="#projects"
 								>Projects</a
 							>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link nav__link--scroll" href="#section--2"
-								>About</a
-							>
+							<a class="nav__link nav__link--scroll" href="#skills">Skills</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link nav__link--scroll" href="#section--3"
-								>Contact</a
-							>
+							<a class="nav__link nav__link--scroll" href="#footer">Contact</a>
 						</li>
 						<li class="nav__item">
 							<a
 								class="nav__link"
-								href="https://drive.google.com/drive/folders/1oIY6dv1CsX-H0uvSQwAwPBgSoL8lxC7u?usp=sharing"
+								href="https://docs.google.com/document/d/1-NaJ0XkRChab5fUqoSMH6tpjGd1BjvJS/edit?usp=sharing&ouid=101577772922281170358&rtpof=true&sd=true"
 								target="_blank"
 								>Resume</a
 							>
@@ -77,8 +76,8 @@
 			</div>
 
 			<div class="header__call-to-action">
-				<a href="#section--1" class="header__scroll">Scroll Down</a>
-				<a href="#section--1" class="header__down-arrow-link"
+				<a href="#about" class="header__scroll">Scroll Down</a>
+				<a href="#about" class="header__down-arrow-link"
 					><img
 						class="header__down-arrow"
 						src="./images/down-arrow-light.png"
@@ -87,7 +86,26 @@
 			</div>
 		</header>
 
-		<div class="section__container" id="section--1">
+		<div class="section__container" id="about">
+			<section class="section">
+				<h1 class="section__title">about</h1>
+
+				<div class="about">
+					<div class="profile-picture"></div>
+					<div class="biography--container">
+						<h3 class="biography--title">Biography</h3>
+						<p class="biography--text">
+							I am a Bachelor's student in the Department of Computer Science at
+							Tbilisi State University from Tbilisi, Georgia, graduating in May
+							2023. My interests lie in solving problems and making minimalist
+							and pleasing UIs.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="section__container" id="projects">
 			<section class="section">
 				<h1 class="section__title">projects</h1>
 
@@ -156,111 +174,63 @@
 			</section>
 		</div>
 
-		<div class="section__container" id="section--2">
+		<div class="section__container" id="skills">
 			<section class="section">
-				<h1 class="section__title">about</h1>
+				<h1 class="section__title">skills</h1>
 
-				<div class="about">
-					<div class="profile-picture"></div>
-					<div class="biography--container">
-						<h3 class="biography--title">Biography</h3>
-						<p class="biography--text">
-							I am a Bachelor's student in the Department of Computer Science at
-							Tbilisi State University from Tbilisi, Georgia, graduating in May
-							2023. My interests lie in solving problems and making minimalist
-							and pleasing UIs.
-						</p>
-					</div>
-				</div>
-
-				<h2 class="skills--title">Skills</h2>
 				<div class="skills">
 					<div class="skill">
 						<img
 							class="skill--icon"
-							src="./images/icon-java.png"
-							alt="java icon"
+							src="./images/icon-mobile.png"
+							alt="mobile"
 						/>
-						<h4 class="skill--name">Java</h4>
+						<h4 class="skill--name">Mobile</h4>
+						<p class="skill--description">Dart (Flutter)</p>
+					</div>
+					<div class="skill">
+						<img class="skill--icon" src="./images/icon-node.png" alt="node" />
+						<h4 class="skill--name">Backend</h4>
 						<p class="skill--description">
-							Spring (Boot, MVC & Hibernate), Maven, Java8+
+							Javascript (NodeJS, Koa, Knex), Java (JPA, Hibernate)
 						</p>
 					</div>
 					<div class="skill">
-						<img
-							class="skill--icon"
-							src="./images/icon-javascript.png"
-							alt="javascript icon"
-						/>
-						<h4 class="skill--name">JavaScript</h4>
-						<p class="skill--description">React.js, Redux, ContextAPI</p>
+						<img class="skill--icon" src="./images/icon-web.png" alt="web" />
+						<h4 class="skill--name">Web</h4>
+						<p class="skill--description">
+							HTML5, CSS (CSS3, Sass), Javascript (ReactJS), Java (Spring Boot,
+							Spring MVC)
+						</p>
 					</div>
 					<div class="skill">
 						<img
 							class="skill--icon"
 							src="./images/icon-database.png"
-							alt="database icon"
+							alt="database"
 						/>
 						<h4 class="skill--name">Database</h4>
-						<p class="skill--description">MySQL, MSSQL, Firebase</p>
+						<p class="skill--description">MongoDB, MySQL, MSSQL, Firebase</p>
 					</div>
 					<div class="skill">
 						<img
 							class="skill--icon"
-							src="./images/icon-html.png"
-							alt="html icon"
+							src="./images/icon-figma.png"
+							alt="figma"
 						/>
-						<h4 class="skill--name">Front-end</h4>
-						<p class="skill--description">HTML5, CSS3, Sass</p>
+						<h4 class="skill--name">UI/UX Tools</h4>
+						<p class="skill--description">Figma, Adobe XD</p>
+					</div>
+					<div class="skill">
+						<img class="skill--icon" src="./images/icon-git.png" alt="git" />
+						<h4 class="skill--name">Version Control</h4>
+						<p class="skill--description">Git (Github, Bitbucket)</p>
 					</div>
 				</div>
 			</section>
 		</div>
 
-		<div class="section__container" id="section--3">
-			<section class="section">
-				<h1 class="section__title">contact</h1>
-				<div class="contacts">
-					<div class="contacts__contact">
-						<img
-							class="contact__icon"
-							src="./images/icon-phone.png"
-							alt="phone icon"
-						/>
-						<p class="contact__info">+995 599-94-56-69</p>
-					</div>
-
-					<div class="contacts__contact">
-						<img
-							class="contact__icon"
-							src="./images/icon-email.png"
-							alt="email icon"
-						/>
-						<a
-							class="contact__info"
-							href="mailto:nodarmosia@gmail.com?subject=Contacting from portfolio"
-							>nodarmosia@gmail.com</a
-						>
-					</div>
-
-					<div class="contacts__contact">
-						<img
-							class="contact__icon"
-							src="./images/icon-github.png"
-							alt="github icon"
-						/>
-						<a
-							class="contact__info"
-							href="https://github.com/NodariMosia"
-							target="_blank"
-							>github.com/NodariMosia</a
-						>
-					</div>
-				</div>
-			</section>
-		</div>
-
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="footer__content">
 				<div class="footer__group">
 					<img
