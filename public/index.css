@@ -511,7 +511,11 @@ a {
 	.section {
 		width: 96%;
 	}
-	.nav__links {
+
+	.nav__item {
+		margin-left: 0;
+	}
+	.nav__item:not(:last-child) {
 		display: none;
 	}
 	.header__content {
